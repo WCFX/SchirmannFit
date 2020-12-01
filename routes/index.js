@@ -4,9 +4,10 @@ import { PersistGate } from 'redux-persist/es/integration/react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { store, persistor } from './src/store';
+import { store, persistor } from '../src/store';
 
-import Home from './src/views/Home';
+import Home from '../src/views/Home';
+import StarterIntro from '../src/views/StarterIntro';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -17,6 +18,7 @@ export default function routes() {
         <NavigationContainer>
           <Navigator>
             <Screen name="Home" component={Home} />
+            <Screen name="StarterIntro" component={StarterIntro} />
           </Navigator>
         </NavigationContainer>
       </PersistGate>
