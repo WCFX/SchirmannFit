@@ -3,7 +3,7 @@ import { Container, Title } from './styles';
 
 const Home = () => (
   <Container>
-    <Title>Hello Word WOW</Title>
+    <Title>Hello Word </Title>
   </Container>
 );
 
